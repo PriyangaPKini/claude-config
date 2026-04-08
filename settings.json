@@ -5,5 +5,13 @@
       "Bash(afplay:*)"
     ]
   },
+  "extraKnownMarketplaces": {
+    "developer-plugins": {
+      "source": {
+        "source": "github",
+        "repo": "PriyangaPKini/claude-config"
+      }
+    }
+  },
   "voiceEnabled": true
 }
