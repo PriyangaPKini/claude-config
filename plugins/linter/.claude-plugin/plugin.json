@@ -1,0 +1,8 @@
+{
+  "name": "linter",
+  "description": "Auto-detect project language and run the appropriate linter/formatter",
+  "version": "1.0.0",
+  "author": {
+    "name": "Priyanga Pkini"
+  }
+}

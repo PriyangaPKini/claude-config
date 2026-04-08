@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(osascript:*)",
+      "Bash(afplay:*)"
+    ]
+  },
+  "extraKnownMarketplaces": {
+    "claude-plugins": {
+      "source": {
+        "source": "directory",
+        "path": "/Users/priyangapkini/claude-config"
+      }
+    }
+  },
+  "voiceEnabled": true
+}

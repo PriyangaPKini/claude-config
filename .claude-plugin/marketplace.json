@@ -1,0 +1,21 @@
+{
+  "name": "claude-plugins",
+  "owner": {
+    "name": "Priyanga Pkini"
+  },
+  "metadata": {
+    "description": "Custom plugin marketplace for Claude Code",
+    "version": "1.0.0",
+    "pluginRoot": "./plugins"
+  },
+  "plugins": [
+{
+      "name": "linter",
+      "source": "./plugins/linter",
+      "description": "Auto-detect project language and run the appropriate linter/formatter",
+      "version": "1.0.0",
+      "author": { "name": "Priyanga Pkini" },
+      "tags": ["linter", "formatter", "code-quality"]
+    }
+  ]
+}
