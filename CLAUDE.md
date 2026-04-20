@@ -11,14 +11,3 @@ Before making changes, review:
 Also follow the global rules in `~/.claude/rules/`:
 - `coding-principles.md` — design philosophy, clean code, simple design
 - `contributing.md` — branch naming, commit format, PR guidelines
-
-## Notifications
-
-After finishing a task, run as the very last action:
-```bash
-osascript -e 'display notification "Task complete" with title "Claude Code"'
-```
-```bash
-afplay /System/Library/Sounds/Glass.aiff
-```
-
