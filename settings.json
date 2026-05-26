@@ -2,18 +2,17 @@
   "permissions": {
     "allow": [
       "Bash(osascript:*)",
-      "Bash(afplay:*)"
+      "Bash(afplay:*)",
+      "Bash(git clone --depth 1:*)",
+      "Bash(git clone --filter=blob:none --no-checkout:*)",
+      "Bash(git -C /tmp/megasthenes-subagent/*:*)",
+      "Bash(mkdir -p /tmp/megasthenes-subagent/*)",
+      "Bash(ls /tmp/megasthenes-subagent/*)",
+      "Read(/tmp/megasthenes-subagent/**)",
+      "Grep(/tmp/megasthenes-subagent/**)",
+      "Glob(/tmp/megasthenes-subagent/**)"
     ]
   },
-  "extraKnownMarketplaces": {
-    "developer-plugins": {
-      "source": {
-        "source": "github",
-        "repo": "PriyangaPKini/claude-config"
-      }
-    }
-  },
-  "voiceEnabled": true,
   "hooks": {
     "Stop": [
       {
@@ -35,6 +34,36 @@
           }
         ]
       }
+    ],
+    "SessionStart": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$HOME/.claude/hooks/traces-session-env.sh",
+            "timeout": 5
+          }
+        ]
+      }
     ]
-  }
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "$HOME/.claude/hooks/display-tokens.sh",
+    "refreshInterval": 5
+  },
+  "enabledPlugins": {
+    "vercel@claude-plugins-official": true
+  },
+  "extraKnownMarketplaces": {
+    "developer-plugins": {
+      "source": {
+        "source": "github",
+        "repo": "PriyangaPKini/claude-config"
+      }
+    }
+  },
+  "voiceEnabled": true,
+  "effortLevel": "medium"
 }
