@@ -64,6 +64,7 @@
       }
     }
   },
+  "effortLevel": "medium",
   "voiceEnabled": true,
-  "effortLevel": "medium"
+  "awaySummaryEnabled": false
 }
